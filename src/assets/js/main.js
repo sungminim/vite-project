@@ -9,3 +9,7 @@ window.addEventListener("load", function () {
     menu();
     port();
 });
+
+setTimeout(function() {
+    document.querySelector('intro__inner').classList.add('ani');
+}, 1000);

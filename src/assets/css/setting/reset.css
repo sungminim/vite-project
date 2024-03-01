@@ -38,16 +38,22 @@ figcaption {
     padding: 0;
 }
 
+* {box-sizing: border-box;}
 /* 폰트 초기화 */
+p,
+div,
 body,
 button,
 input,
 select,
 table,
 textarea {
-    font-family: var(--mainEng-font), var(--mainKor-font), "Apple SD Gothic Neo",
+    font-family:  var(--mainKor-font), var(--mainEng-font), "Apple SD Gothic Neo",
     "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
+    line-height: 150%;
 }
+
+span {font-style: inherit;font-size: inherit;}
 
 /* 링크 초기화 */
 a,
@@ -99,4 +105,30 @@ img {
 #skip a:focus,
 #skip a:active {
     top: 10px;
+}
+
+.scHdn {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color:rgb(52, 52, 58, 1);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 10px;
 }
