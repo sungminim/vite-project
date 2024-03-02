@@ -1,3 +1,25 @@
+.sub_tit {
+    position:relative;
+    font-size: 22px;
+    font-family: var(--mainEng-font);
+    letter-spacing: -.5px;
+    font-weight: 600;
+    padding-left:25px;
+    margin-bottom: 30px;
+}
+
+.sub_tit:before {
+    content:'';
+    display:block;
+    width: 16px;
+    height: 16px;
+    background: #111;
+    position:absolute;
+    left: 0;
+    top:5px;
+    border-radius: 50%;
+}
+
 .slkll__inner {
     padding: 16px;
     display: flex;
