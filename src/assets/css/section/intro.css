@@ -3,7 +3,6 @@
     margin:0 auto;
     max-width: 1860px;
     padding:0 30px;
-    overflow: hidden;
 }
 .intro__inner {
     position:relative;
@@ -87,9 +86,7 @@
     
     .site__item {height:85vh}
     .section-who .img-wrap img {width:400px}
-}
-
-@media (max-width: 1200px){
+    
 }
 
 @media (max-width: 1040px){
@@ -101,6 +98,8 @@
     .intro__inner .myProfile {margin-top:20px;display:flex;justify-content: center}
 
     .site__item {height:auto;}
+
+    #main {overflow: hidden};
 }
 
 @media (max-width: 767px){
@@ -113,4 +112,13 @@
     .intro_text_area .emoji img {width:80px;}
     .intro__inner .myProfile .profile {position:relative;right:auto;bottom:auto;margin-top: 20px;;}
 
+}
+
+
+@media (max-width: 480px){
+    .intro__inner .intro_title_text {font-size: 60px;line-height: 50px;}
+    .intro__inner .intro_title_text span {left:-2px;}
+    .intro_text_area .emoji img {width:50px;}
+    .intro_text_area {padding-left:60px;}
+    .intro__inner .intro_sub_txt {margin-left:-60px;}
 }

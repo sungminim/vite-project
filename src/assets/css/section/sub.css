@@ -1,0 +1,47 @@
+#subPage {padding-top:170px;}
+#subPage .page_info {max-width: 1400px;margin:0 auto;}
+
+.contents_tit {display:block;font-size: 48px;font-weight: 700;word-break: keep-all;margin-bottom: 20px;line-height: 60px;}
+.my_info {display:flex;gap:20px;}
+.my_info>li {position:relative;display:flex;gap:10px;font-size: 20px;}
+.my_info>li:before {position:absolute;content:'';display:block;right:-12px;top:9px;width:4px;height:4px;background:#111;border-radius: 50%;}
+.my_info>li:last-child:before {display:none;}
+.my_info>li b {color:#ED6A00;font-weight: 700;}
+.contents_txt {margin-top:20px;}
+.contents_txt .txt {color:#666;font-size: 20px;line-height: 34px;}
+
+.btnArea {margin-top:25px;}
+.btn_go {display:inline-block;height:48px;padding:0 20px;min-width: 170px;border:1px solid #111;border-radius: 50px;transition: .2s all;}
+.btn_go>span {display:flex;align-items: center;justify-content: center;padding-right: 10px;color:#111;height:100%;position:relative;font-weight:600;font-size: 18px;transition: .2s all;}
+.btn_go:disabled {background:#ddd;border-color: #ddd;cursor: default;}
+.btn_go:hover {background-color: #111;}
+.btn_go:hover>span {color:#fff;}
+.btn_go>span:before {content:'';display:block;width:13px;height:10px;background:url(../../img/ico-arr-go.svg) no-repeat;position:absolute;right:5px;top:50%;margin-top:-5px;}
+.btn_go:hover>span:before {background-image: url(../../img/ico-arr-go-white.svg);}
+
+#subPage~#contact {padding-top:200px;}
+
+.project_info {margin-top:100px;}
+.img_section {border-radius: 50px;border:1px solid #000;overflow: hidden;}
+
+.half_view {display:flex;gap:40px;margin-top:40px;}
+
+
+@media (max-width: 1041px){
+    #subPage {padding-top:120px;}
+    .contents_tit {font-size: 32px;line-height: 42px;}
+    .my_info>li {font-size: 18px;}
+    .contents_txt .txt {font-size: 18px;line-height: 28px;} 
+    .project_info {margin-top:80px;}
+    .img_section {border-radius: 30px;}
+    .half_view {display:block;}
+    .img_section+.img_section {margin-top:40px;}
+    #subPage~#contact {padding-top:100px;}
+}
+
+
+@media (max-width: 767px){
+    .contents_tit {font-size: 28px;line-height: 36px;}
+    .img_section {border-radius: 20px;}
+    .contents_txt .txt {font-size: 16px;line-height: 24px;word-break: keep-all;}
+}
