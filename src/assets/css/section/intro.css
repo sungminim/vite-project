@@ -18,6 +18,20 @@
     letter-spacing: -7px;
     line-height: 6.3vw;
 }
+
+
+.intro__inner .intro_title_text p {
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
+.intro__inner .intro_title_text div {
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
 .intro__inner .intro_title_text span  {
     font-weight: 400;
     transform: rotate(-15deg);
@@ -79,6 +93,14 @@
     font-size: 40px;
     font-family: "San Francisco";
 }
+
+.intro__inner .intro_title_text>div {position: relative;overflow: hidden;}
+.intro__inner .intro_title_text>div>p {transform: translateY(110%);transition:.5s ease;}
+.intro__inner .intro_title_text>div+div>p {transition-delay: .18s;}
+.main_ani .intro__inner .intro_title_text>div>p  {transform: translateY(0%);}
+
+.intro_text_area {opacity: 0;transition:2s;transition-delay: .6s;}
+.main_ani .intro_text_area {opacity: 1;}
 
 
 @media (max-width: 1400px){

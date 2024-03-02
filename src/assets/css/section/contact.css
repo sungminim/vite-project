@@ -39,10 +39,15 @@
     font-size: 22px;
     font-weight: 500;
 }
-
 .tel_area {margin-top:30px;}
 .tel_area>a {display:block;font-size: 30px;line-height: 35px;letter-spacing: -1px;font-weight: 500;text-decoration: underline;}
 .tel_area>a+a {margin-top:15px;}
+
+.contact__inner .contact_tit {filter: blur(20px);transition: 1s all ease;}
+.contact__inner .contact_text  {filter: blur(20px);transition: 1s all ease;}
+
+.contact__inner.ani .contact_tit {filter: blur(0);}
+.contact__inner.ani .contact_text  {filter: blur(0);}
 
 @media (max-width: 1200px){
     .contact_text b {font-size: 24px;}

@@ -1,4 +1,10 @@
-#subPage {padding-top:170px;}
+
+#dim {background:rgba(0,0,0,0.5);opacity: 0;position:fixed;left:0;top:0;width: 100%;height:100%;z-index: 99998;}
+/* #dim.on {opacity: 1;} */
+.pop_wrap {position:fixed;left:0;bottom:0;width:100%;background:#fff;z-index: 99999;height: 95%;border-top-left-radius: 50px;border-top-right-radius: 50px;overflow: hidden;}
+.pop_sub {overflow-y: auto;max-height: 80dvh;}
+
+#subPage {padding-top:50px;}
 #subPage .page_info {max-width: 1400px;margin:0 auto;}
 
 .contents_tit {display:block;font-size: 48px;font-weight: 700;word-break: keep-all;margin-bottom: 20px;line-height: 60px;}
@@ -24,7 +30,10 @@
 .project_info {margin-top:100px;}
 .img_section {border-radius: 50px;border:1px solid #000;overflow: hidden;}
 
+.project_cont {opacity: .8;font-weight: 500;margin-top:10px;;}
+
 .half_view {display:flex;gap:40px;margin-top:40px;}
+
 
 
 @media (max-width: 1041px){
