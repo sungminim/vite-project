@@ -89,9 +89,22 @@
     width:100px
 }
 
-.scroll-down span {
-    font-size: 40px;
-    font-family: "San Francisco";
+.scroll-down {position:absolute;bottom:30px;left:-10px;;font-size: 0}
+.scroll-down .bg {animation: rotate 8s infinite linear }
+.scroll-down span {position:absolute;left:50%;top:50%;display:block;width:20px;height:40px;border:1px solid rgba(0,0,0,.7);border-radius: 30px;transform: translate(-50%,-50%);}
+.scroll-down span:before {content:'';display:block;width:5px;height:5px;background:#FFE943 !important;position:absolute;left:50%;margin-left:-2.5px;top:7px;border-radius: 50%;}
+.scroll-down .bg img {width:110px;}
+@keyframes rotate {
+    from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
 }
 
 .intro__inner .intro_title_text>div {position: relative;overflow: hidden;}
