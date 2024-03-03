@@ -89,6 +89,8 @@
     width:100px
 }
 
+
+
 .scroll-down {position:absolute;bottom:30px;left:-10px;;font-size: 0}
 .scroll-down .bg {animation: rotate 8s infinite linear }
 .scroll-down span {position:absolute;left:50%;top:50%;display:block;width:20px;height:40px;border:1px solid rgba(0,0,0,.7);border-radius: 30px;transform: translate(-50%,-50%);}

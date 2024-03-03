@@ -82,7 +82,39 @@ export function port() {
         },
     });
 
+ //선택자
+ const cursor = document.querySelector(".mouse__coursor")
+ const cursor2 = document.querySelector(".mouse__coursor2")
+
+ //커서 좌표값 불러오기
+ window.addEventListener("mousemove", e =>{
+     gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY -5});
+     gsap.to(cursor2, {duration: 0.8, left: e.pageX -15, top: e.pageY -15});
+     
+    document.querySelectorAll(".mouse__text span").forEach(span => {
+        span.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+            cursor2.classList.add("active");
+        });
+        span.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
+            cursor2.classList.remove("active");
+        });
+    });
+
+    document.querySelectorAll(".project_list>li>a").forEach(span => {
+        span.addEventListener("mouseenter", () => {
+            cursor.classList.add("active1");
+            cursor2.classList.add("active1");
+        });
+        span.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active1");
+            cursor2.classList.remove("active1");
+        });
+    });
+
     
+});
 
 
 }
